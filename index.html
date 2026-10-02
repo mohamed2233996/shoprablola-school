@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مدرسة شبرا بلولة للتعليم الأساسي</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;800&family=Reem+Kufi:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#4C1D95;--coral:#F43F5E;--sky:#0EA5E9;--lav:#F5F3FF;--bg:#FFFFFF;--ink:#1e1233;--mute:#645a7d;--line:#e6e0f5;--card:#faf8ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#140b2b;--lav:#1b1038;--ink:#f1ecff;--mute:#b4a8d6;--line:#2f2160;--card:#1d1240}}
+:root[data-theme="dark"]{--bg:#140b2b;--lav:#1b1038;--ink:#f1ecff;--mute:#b4a8d6;--line:#2f2160;--card:#1d1240}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,Tahoma,sans-serif;line-height:1.85;font-size:1.02rem}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.side{position:fixed;top:0;right:0;bottom:0;width:230px;background:var(--plum);color:#fff;padding:26px 20px;display:flex;flex-direction:column;gap:6px;z-index:5}
+.brand{font-family:'Reem Kufi',serif;font-size:1.25rem;line-height:1.5;margin-bottom:18px;border-bottom:3px solid var(--coral);padding-bottom:14px}
+.side a.l{padding:7px 12px;border-radius:10px;color:#ddd3ff}
+.side a.l:hover{background:rgba(255,255,255,.12);color:#fff}
+.side .btn{margin-top:auto}
+.btn{display:block;text-align:center;border:0;cursor:pointer;font:inherit;font-weight:800;padding:10px 18px;border-radius:12px;background:var(--coral);color:#fff}
+.btn.sky{background:var(--sky)}
+.btn.ghost{background:transparent;border:2px solid #fff;margin-top:8px}
+main{margin-inline-start:230px}
+@media(max-width:860px){
+ .side{position:sticky;top:env(safe-area-inset-top,0px);width:auto;flex-direction:row;align-items:center;overflow-x:auto;padding:10px 14px;gap:4px;white-space:nowrap}
+ .brand{margin:0;border:0;padding:0 8px 0 14px;font-size:1rem}
+ .side .btn,.side .btn.ghost{margin:0;padding:6px 14px;font-size:.9rem}
+ .side .ghost{display:none}
+ main{margin:0}}
+.hero{padding:56px 6vw 40px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;background:var(--lav);align-items:center}
+.hero h1{font-family:'Reem Kufi',serif;font-size:clamp(2.1rem,5.4vw,4rem);line-height:1.35;margin:0 0 14px;color:var(--plum)}
+:root[data-theme="dark"] .hero h1{color:#fff}
+.hero p{max-width:520px;color:var(--mute);margin:0 0 20px}
+.stat{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat div{background:var(--bg);border:2px solid var(--line);border-radius:18px;padding:16px;text-align:center}
+.stat div:nth-child(1){border-color:var(--coral)}.stat div:nth-child(4){border-color:var(--sky)}
+.stat b{display:block;font-size:2rem;font-weight:800;color:var(--coral)}
+.stat div:nth-child(2) b{color:var(--plum)}.stat div:nth-child(4) b{color:var(--sky)}
+.stat span{color:var(--mute);font-size:.85rem}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
+section{padding:60px 6vw}
+h2{font-family:'Reem Kufi',serif;font-size:2rem;margin:0 0 4px;color:var(--plum)}
+:root[data-theme="dark"] h2{color:#fff}
+.sub{color:var(--mute);margin:0 0 26px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.col{border:2px solid var(--line);border-radius:22px;overflow:hidden;background:var(--card);display:flex;flex-direction:column}
+.col header{padding:26px 18px;color:#fff;font-family:'Reem Kufi',serif;font-size:1.5rem;min-height:110px;display:flex;align-items:flex-end}
+.col:nth-child(1) header{background:var(--coral)}.col:nth-child(2) header{background:var(--sky)}.col:nth-child(3) header{background:var(--plum)}
+.col div{padding:18px}
+.col ul{margin:8px 0 0;padding-inline-start:18px;color:var(--mute)}
+@media(max-width:860px){.cols{grid-template-columns:1fr}}
+details{border:2px solid var(--line);border-radius:16px;background:var(--card);margin-bottom:10px;padding:2px 18px}
+summary{cursor:pointer;font-weight:800;padding:12px 0;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--coral);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details ul{margin:0 0 12px;padding-inline-start:20px;color:var(--mute)}
+.pod{display:flex;align-items:flex-end;justify-content:center;gap:12px;max-width:620px;margin:auto}
+.pod div{flex:1;text-align:center;border-radius:16px 16px 0 0;color:#fff;padding:14px 8px}
+.pod .p1{background:var(--coral);height:210px}.pod .p2{background:var(--plum);height:165px}.pod .p3{background:var(--sky);height:135px}
+.pod b{font-size:2.2rem;display:block}
+.tag{display:inline-block;background:var(--lav);border-radius:999px;padding:0 14px;margin:6px 0;font-weight:500}
+.note{font-size:.82rem;color:var(--mute);text-align:center;margin-top:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+.box{border-radius:22px;padding:26px;background:var(--lav)}
+.box.dk{background:var(--plum);color:#fff}
+.box h3{margin:0 0 10px;font-family:'Reem Kufi',serif;font-size:1.4rem}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0}
+.steps li{counter-increment:s;padding-inline-start:44px;position:relative;margin-bottom:10px}
+.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:2px;width:30px;height:30px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font-weight:800}
+.row{display:flex;gap:0;border-block:2px solid var(--line)}
+.row div{flex:1;padding:22px 16px;border-inline-end:2px solid var(--line)}
+.row div:last-child{border:0}.row h3{margin:0;color:var(--coral)}.row p{margin:0;color:var(--mute);font-size:.95rem}
+@media(max-width:860px){.row{flex-direction:column}.row div{border:0;border-bottom:2px solid var(--line)}}
+form{display:grid;gap:10px}
+input,textarea{font:inherit;padding:11px 14px;border-radius:12px;border:2px solid transparent;background:#fff;color:#1e1233;width:100%}
+.res{display:none;margin-top:10px;padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.18)}
+.dk .res{background:rgba(255,255,255,.18)}
+.box:not(.dk) .res{background:#fff}
+footer{background:#1e1233;color:#cfc4f0;padding:28px 6vw;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;font-size:.92rem}
+footer a:hover{color:var(--coral)}
+.rv{opacity:0;transform:translateX(24px);transition:.6s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<aside class="side">
+  <div class="brand">مدرسة شبرا بلولة<br>للتعليم الأساسي</div>
+  <a class="l" href="#top">الرئيسية</a><a class="l" href="#levels">المراحل</a><a class="l" href="#facilities">المرافق</a><a class="l" href="#fame">الأوائل</a><a class="l" href="#services">الخدمات</a><a class="l" href="#community">المجتمع</a><a class="l" href="#contact">تواصل معنا</a>
+  <a class="btn" href="#services">تقديم الطلاب الجدد</a>
+  <a class="btn ghost" href="#services">استعلام عن النتائج</a>
+</aside>
+<main>
+<div class="hero" id="top">
+  <div>
+    <h1>نبني جيلاً واعداً ومتميزاً في قلب المنوفية</h1>
+    <p>مدرسة شبرا بلولة للتعليم الأساسي: رياض أطفال وابتدائي وإعدادي، بإشراف إدارة منوف التعليمية.</p>
+    <a class="btn sky" style="display:inline-block" href="#levels">اكتشف مراحلنا</a>
+  </div>
+  <div class="stat">
+    <div><b data-to="3">0</b><span>مراحل دراسية</span></div>
+    <div><b data-to="600">0</b><span>طالب وطالبة</span></div>
+    <div><b data-to="98" data-s="%">0</b><span>نسبة النجاح</span></div>
+    <div><b data-to="45">0</b><span>الكادر التعليمي</span></div>
+  </div>
+</div>
+
+<section id="levels">
+  <h2>المراحل التعليمية</h2><p class="sub">ثلاث مراحل متتابعة في مكان واحد</p>
+  <div class="cols">
+    <article class="col rv"><header>رياض الأطفال</header><div>أنشطة لعب وتعلم، حفلات ومواهب الأطفال.<ul><li>السن: 4 سنوات حتى 1/10</li><li>أنشطة وحفلات</li><li>اكتشاف الموهوبين</li></ul></div></article>
+    <article class="col rv"><header>المرحلة الابتدائية</header><div>أساس القراءة والكتابة والحساب.<ul><li>التقديم للصف الأول: من 6 إلى 9 سنوات</li><li>مناهج الوزارة</li><li>الجداول الدراسية</li></ul></div></article>
+    <article class="col rv"><header>المرحلة الإعدادية</header><div>تجهيز الطلاب للشهادة الإعدادية.<ul><li>مراجعات وامتحانات</li><li>امتحانات الشهادة</li><li>إعلان الأوائل</li></ul></div></article>
+  </div>
+</section>
+
+<section id="facilities" style="background:var(--lav)">
+  <h2>الأقسام والمرافق</h2><p class="sub">اضغط على القسم لعرض التفاصيل</p>
+  <details open><summary>الموهوبون والأنشطة التربوية</summary><ul><li>معارض لإبداعات الطلاب</li><li>مسابقات الصحافة المدرسية</li><li>مسابقات فنية وثقافية</li></ul></details>
+  <details><summary>المكتبة والمعامل</summary><ul><li>مكتبة للقراءة والاستعارة</li><li>معمل العلوم</li><li>معمل الحاسب الآلي</li></ul></details>
+  <details><summary>الأنشطة الرياضية والاجتماعية</summary><ul><li>أنشطة رياضية في الفناء</li><li>إذاعة مدرسية وأنشطة اجتماعية</li></ul></details>
+</section>
+
+<section id="fame">
+  <h2>لوحة الأوائل والتكريمات</h2><p class="sub">متفوقو الشهادتين الابتدائية والإعدادية</p>
+  <div class="pod">
+    <div class="p2 rv"><b>2</b>اسم الطالب<br><small>أوائل المدرسة</small></div>
+    <div class="p1 rv"><b>1</b>اسم الطالب<br><small>أوائل المدرسة</small></div>
+    <div class="p3 rv"><b>3</b>اسم الطالب<br><small>أوائل المدرسة</small></div>
+  </div>
+  <p class="note">الأسماء مكان مؤقت، استبدلها بأسماء الأوائل الفعلية.</p>
+</section>
+
+<section id="services" style="background:var(--lav)">
+  <h2>الخدمات الإلكترونية</h2><p class="sub">للطلاب وأولياء الأمور</p>
+  <div class="two">
+    <div class="box dk">
+      <h3>الاستعلام عن النتيجة</h3>
+      <form id="rf"><input required placeholder="رقم الجلوس أو اسم الطالب" aria-label="رقم الجلوس أو اسم الطالب"><button class="btn" type="submit">استعلام</button></form>
+      <div class="res" id="rr" role="status"></div>
+    </div>
+    <div class="box">
+      <h3>التقديم عبر بوابة الوزارة</h3>
+      <ol class="steps">
+        <li>ادخل بوابة وزارة التربية والتعليم للتقديم.</li>
+        <li>جهز الأوراق: شهادة الميلاد وصورة بطاقة ولي الأمر وصور شخصية (أكد القائمة مع المدرسة).</li>
+        <li>تأكد من شرط السن للمرحلة المطلوبة.</li>
+        <li>استفسر عن الزي المدرسي ومواعيد الامتحانات من المدرسة.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="community">
+  <h2>المدرسة وقرية شبرا بلولة</h2><p class="sub">شراكة مع أهل القرية والمراكز المجاورة</p>
+  <div class="row">
+    <div class="rv"><h3>الأسواق الخيرية</h3><p>معارض يشارك فيها الطلاب وأولياء الأمور.</p></div>
+    <div class="rv"><h3>القوافل</h3><p>قوافل توعوية وتعليمية في القرية والمراكز المجاورة.</p></div>
+    <div class="rv"><h3>الوحدات الخدمية</h3><p>تعاون مع الوحدات الخدمية بالقرية في الحملات.</p></div>
+  </div>
+</section>
+
+<section id="contact" style="background:var(--lav)">
+  <h2>تواصل معنا</h2><p class="sub">قرية شبرا بلولة - مركز منوف - المنوفية</p>
+  <div class="two">
+    <div class="box">
+      <form id="cf"><input required placeholder="الاسم" aria-label="الاسم"><input required type="tel" placeholder="رقم الهاتف" aria-label="رقم الهاتف"><textarea required rows="4" placeholder="رسالتك" aria-label="رسالتك"></textarea><button class="btn" type="submit">إرسال الرسالة</button></form>
+      <div class="res" id="cr" role="status">تم استلام رسالتك. شكراً لتواصلك.</div>
+    </div>
+    <div class="box dk">
+      <h3>بيانات التواصل</h3>
+      <p>الهاتف: <a href="tel:0483644504" dir="ltr"><b>048-3644504</b></a><br>العنوان: قرية شبرا بلولة - مركز منوف - محافظة المنوفية<br>التبعية: إدارة منوف التعليمية - مديرية التربية والتعليم</p>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%D9%85%D8%AF%D8%B1%D8%B3%D8%A9+%D8%B4%D8%A8%D8%B1%D8%A7+%D8%A8%D9%84%D9%88%D9%84%D8%A9+%D9%85%D9%86%D9%88%D9%81+%D8%A7%D9%84%D9%85%D9%86%D9%88%D9%81%D9%8A%D8%A9">افتح الموقع في خرائط Google</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div><b style="color:#fff">مدرسة شبرا بلولة للتعليم الأساسي</b><br>© 2026 جميع الحقوق محفوظة</div>
+  <div><a href="#levels">المراحل</a> &nbsp; <a href="#services">التقديم</a> &nbsp; <a href="#contact">تواصل</a></div>
+  <div>صفحة المدرسة على فيسبوك: أضف الرابط هنا</div>
+</footer>
+</main>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+document.querySelectorAll('[data-to]').forEach(function(el){var to=+el.dataset.to,s=el.dataset.s||'',t0=performance.now();
+(function k(t){var p=Math.min((t-t0)/1400,1);el.textContent=Math.round(to*p)+s;if(p<1)requestAnimationFrame(k)})(t0)});
+document.getElementById('rf').onsubmit=function(e){e.preventDefault();var r=document.getElementById('rr');r.style.display='block';r.textContent='خدمة الاستعلام قيد الربط ببوابة النتائج الرسمية. للاستعلام الآن تواصل مع المدرسة على 048-3644504.'};
+document.getElementById('cf').onsubmit=function(e){e.preventDefault();document.getElementById('cr').style.display='block';e.target.reset()};
+</script>
+</body>
+</html>
